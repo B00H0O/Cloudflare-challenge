@@ -1,0 +1,19 @@
+# Build artifacts
+target/
+*.exe
+*.pdb
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Config (personal settings — defaults are hardcoded in main.rs)
+.env
+
+# Logs
+*.log
+_private/
