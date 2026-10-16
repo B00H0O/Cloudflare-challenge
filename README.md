@@ -16,7 +16,7 @@ $ curl -X POST http://localhost:3010/managed \
     -H "content-type: application/json" \
     -d '{"url":"https://the-site.com/"}'
 
-{"ok":true,"cf_clearance":"...","domain":".the-site.com","userAgent":"Mozilla/5.0 ...","cookieHeader":"cf_clearance=...; ...","cookies":[...],"elapsedMs":5100}
+{"ok":true,"cf_clearance":"...","domain":".the-site.com","userAgent":"Mozilla/5.0 ...","cookieHeader":"cf_clearance=...; ...","cookies":[...],"elapsedMs":2100}
 ```
 
 ## Run
@@ -91,7 +91,7 @@ All optional, defaults work out of the box.
 
 ## Scaling
 
-Each solve waits on Cloudflare's interstitial (~5 s), so throughput comes from running solves in
+Each solve waits on Cloudflare's interstitial (~2-5 s), so throughput comes from running solves in
 parallel: raise `MAX_CONCURRENT` and rotate proxies. The challenge is CPU-heavy, so scale with
 cores — one browser context per solve.
 
