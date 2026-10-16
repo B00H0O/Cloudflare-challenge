@@ -2,7 +2,7 @@
 
 Pass the Cloudflare managed-challenge ("Just a moment...") with headless CloakBrowser over raw
 CDP, and get back a `cf_clearance` cookie you can replay over plain HTTP. Node.js, one small
-server, one dependency.
+server, one dependency. 
 
 For Turnstile tokens or IUAM, use
 [cloudflare-solver](https://github.com/B00H0O/cloudflare-solver) instead.
