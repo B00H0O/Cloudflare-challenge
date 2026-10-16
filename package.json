@@ -1,0 +1,17 @@
+{
+  "name": "cf-cloak",
+  "version": "1.0.0",
+  "description": "Cloudflare managed-challenge clearance minter over raw CDP using headless CloakBrowser. Returns a replayable cf_clearance cookie + cookie set + User-Agent.",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.21.0"
+  }
+}
