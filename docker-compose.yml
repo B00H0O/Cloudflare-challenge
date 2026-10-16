@@ -1,0 +1,13 @@
+services:
+  solver:
+    build: .
+    image: cf-managed
+    ports:
+      - "408:408"
+    restart: unless-stopped
+    environment:
+      - BROWSERS=2
+      - TABS=10
+      - timeOut=90000
+      - HEADLESS=true
+    shm_size: 1g
